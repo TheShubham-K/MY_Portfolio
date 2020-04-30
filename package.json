@@ -1,0 +1,27 @@
+{
+  "name": "own_website",
+  "version": "1.0.0",
+  "description": "My Personal Website.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubham-sys/Tech.git"
+  },
+  "author": "Shubham Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubham-sys/Tech/issues"
+  },
+  "homepage": "https://github.com/shubham-sys/Tech#readme",
+  "devDependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0",
+    "lite-server": "^2.5.4",
+    "popper": "^1.0.1"
+  }
+}
