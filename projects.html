@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <link rel="icon"
+    <link rel="icon"
         href="https://scontent.fblr4-1.fna.fbcdn.net/v/t1.0-1/p160x160/51641826_114733882983798_409013918896226304_o.jpg?_nc_cat=101&_nc_sid=dbb9e7&_nc_ohc=EwC2teZpy6oAX95ncMk&_nc_ht=scontent.fblr4-1.fna&_nc_tp=6&oh=a7078521a2d68c5bf696a34631fe22a0&oe=5EF8BD4A"
         type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -14,15 +14,168 @@
     <meta name="author" content="" />
     <meta http-epuiv="refresh" , content="10" />
     <meta name="theme-color" ,content="#26F809" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" />
     <title>Projects</title>
 
 </head>
 
 <body>
+
+
+
+    <!-- login Modal -->
+    <div id="LoginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" id="modalHeader2">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body2">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                    placeholder="Enter email" />
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1"
+                                    id="exampleInputPassword3" placeholder="Password" />
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" />
+                                    <label class="form-check-label"> Remember me </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">
+                                Cancel
+                            </button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">
+                                Sign in
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Education Modal -->
+    <div id="educationModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header" id="modalheader1">
+                    <h4 class="modal-title align-self-center">
+                        <big>Education</big>
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body1">
+                    <p>
+                        <div id="rectangle">
+                            <div style="margin-top : 2em ; color: white;" align="center">
+                                2022
+                            </div>
+
+                        </div>
+                        <div class="boxed">
+                            <br>
+                            Nitte Mahalinga Adyanthaya Memorial Institute of Technology, Nitte<br>
+                            B.E. - Computer Science Engineering
+                        </div>
+                    </p>
+
+                    <div>
+
+                        <p>
+                            <p></p>
+                            <div id="rectangle">
+                                <div style="margin-top : 2em ; color: white;" align="center">
+                                    2017
+                                </div>
+
+                            </div>
+
+                            <div class="boxed">
+                                <br>
+                                Doon Public School,Koyla Nagar, Dhanbad<br>
+                                12th - CBSE - Science
+                            </div>
+                        </p>
+
+                    </div>
+
+                    <p>
+
+
+                        <p></p>
+                        <div id="rectangle">
+                            <div style="margin-top : 2em ; color: white;" align="center">
+                                2015
+                            </div>
+
+                        </div>
+
+                        <div class="boxed">
+                            <br>
+                            De Nobili School CFRI, Dhanbad<br>
+                            10th - ICSE
+                        </div>
+                        <br>
+                        <p></p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Download Modal -->
+    <div class="modal fade" id="mydownloadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Downloads</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a href="https://drive.google.com/open?id=19TiuopGFAWNeq9xcH3-1i_1NPcA3NFVP" download>
+                        <button class="btn btn-outline-success" id="resume">Resume</button>
+                    </a>
+                    <br>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
     <nav class="navbar navbar-dark navbar-expand-sm">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -32,11 +185,11 @@
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link"  href="https://github.com/shubham-sys"><span class="fa fa-home fa-lg"></span>
+                        <a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>
                             theshubhamkumar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about"><span class="fa fa-info fa-lg"></span> About</a>
+                        <a class="nav-link" href="./index.html"><span class="fa fa-info fa-lg"></span> About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#education" id="myEduModalToggle"><span
@@ -44,24 +197,25 @@
                             Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./projects.html"><i class="fa fa-pencil-square" aria-hidden="true"></i>
+                        <a class="nav-link" href="./projects.html"><i class="fa fa-pencil-square"
+                                aria-hidden="true"></i>
                             Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#downloads" id="mydownload"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                        <a class="nav-link" href="#downloads" id="mydownload"><i class="fa fa-cloud-download"
+                                aria-hidden="true"></i>
                             Download</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contactus.html"><span
-                                class="fa fa-address-card fa-lg"></span>
+                        <a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>
                             Contact</a>
                     </li>
                 </ul>
-                <!-- <span class="navbar-text">
+                <span class="navbar-text">
                     <a href="#loginButton" id="loginModalToggle">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
-                </span> -->
+                </span>
             </div>
         </div>
     </nav>
@@ -120,20 +274,21 @@
             <div>
                 <h2>Projects.</h2>
 
-
-
-
                 <div id="accordion">
                     <div class="card">
                         <div class="card-header" role="tab" id="peterhead">
                             <h3 class="mb-0"><a data-toggle="collapse" data-target="#peter" href="">Bootstrap4
-                                    <small>A Website Build Using Bootstrap, HTML, CSS, JavaScript and Node.js.</small></a>
+                                    <small>A Website Build Using Bootstrap, HTML, CSS, JavaScript and
+                                        Node.js.</small></a>
                             </h3>
                         </div>
                         <div role="tabpanel" class="collapse show" data-parent="#accordion" id="peter">
                             <div class="card-body">
-                                <p class="d-none d-sm-block"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR2ifkYF_ypeqjbItV90sLezgfbZhtLYYRHNZ3Y80BXMKOIEisk&usqp=CAU" alt="Bootstrap">
-                                <br><br><a href="https://github.com/shubham-sys/Bootstrap4"><button type="button" class="btn btn-outline-info">Click me.</button></a>
+                                <p class="d-none d-sm-block"><img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR2ifkYF_ypeqjbItV90sLezgfbZhtLYYRHNZ3Y80BXMKOIEisk&usqp=CAU"
+                                        alt="Bootstrap">
+                                    <br><br><a href="https://github.com/shubham-sys/Bootstrap4"><button type="button"
+                                            class="btn btn-outline-info">Click me.</button></a>
                                 </p>
                             </div>
 
@@ -151,12 +306,17 @@
                         </div>
                         <div class="collapse" id="danny" data-parent="#accordion">
                             <div class="card-body">
-                                <p class="d-none d-sm-block">Unix Course from Cousera, A Bash Program have been to ask user to
-                                Guess a random number based on which higher or lower is prompted, if the user guesses wrong number
-                                then try it again otherwise, the game terminates saying "Congratulation"</p>
-                                <img src="https://s0.cyberciti.org/images/faq/2013/12/glances-ubuntu-output.png" alt="bashprogram">
-                                <br><br><a href="https://github.com/shubham-sys/Unix-Workbench"><button type="button" class="btn btn-outline-warning">Unix Workbench</button></a>&nbsp;&nbsp;
-                                <a href="https://github.com/shubham-sys/Unix_Project"><button type="button" class="btn btn-outline-primary">Unix Project</button></a>
+                                <p class="d-none d-sm-block">Unix Course from Cousera, A Bash Program have been to ask
+                                    user to
+                                    Guess a random number based on which higher or lower is prompted, if the user
+                                    guesses wrong number
+                                    then try it again otherwise, the game terminates saying "Congratulation"</p>
+                                <img src="https://s0.cyberciti.org/images/faq/2013/12/glances-ubuntu-output.png"
+                                    alt="bashprogram">
+                                <br><br><a href="https://github.com/shubham-sys/Unix-Workbench"><button type="button"
+                                        class="btn btn-outline-warning">Unix Workbench</button></a>&nbsp;&nbsp;
+                                <a href="https://github.com/shubham-sys/Unix_Project"><button type="button"
+                                        class="btn btn-outline-primary">Unix Project</button></a>
                             </div>
                         </div>
                     </div>
@@ -170,12 +330,16 @@
                         </div>
                         <div class="collapse" id="agumbe" data-parent="#accordion">
                             <div class="card-body">
-                                <p class="d-none d-sm-block">A cross platform mobile applications built using HTML, CSS,Javascript and 
-                                Adobe PhoneGap.</p>
-                                <img src="https://www.promaticsindia.com/img/cross-platform-development.png" alt="phonegap">
+                                <p class="d-none d-sm-block">A cross platform mobile applications built using HTML,
+                                    CSS,Javascript and
+                                    Adobe PhoneGap.</p>
+                                <img src="https://www.promaticsindia.com/img/cross-platform-development.png"
+                                    alt="phonegap">
                                 <br><br>
-                                <a href="https://github.com/shubham-sys/Mini-Projects"><button type="button" class="btn btn-outline-primary">CPMA 1.</button></a>
-                                <a href="https://github.com/shubham-sys/CordPro"><button type="button" class="btn btn-outline-info">CPMA 2.</button></a>
+                                <a href="https://github.com/shubham-sys/Mini-Projects"><button type="button"
+                                        class="btn btn-outline-primary">CPMA 1.</button></a>
+                                <a href="https://github.com/shubham-sys/CordPro"><button type="button"
+                                        class="btn btn-outline-info">CPMA 2.</button></a>
                             </div>
                         </div>
                     </div>
@@ -191,9 +355,11 @@
                             <div class="card-body">
                                 <p class="d-none d-sm-block">A python turtle program to draw cool diagram.</p>
                                 <br><br>
-                                <img src="https://i.pinimg.com/originals/26/a7/69/26a769c57732648b754c884253a89c01.png" alt="turtle">
+                                <img src="https://i.pinimg.com/originals/26/a7/69/26a769c57732648b754c884253a89c01.png"
+                                    alt="turtle">
                                 <br><br>
-                                <a href="https://github.com/shubham-sys/Turtle"><button type="button" class="btn btn-outline-warning">Turtle</button></a>
+                                <a href="https://github.com/shubham-sys/Turtle"><button type="button"
+                                        class="btn btn-outline-warning">Turtle</button></a>
                             </div>
                         </div>
                     </div>
@@ -209,9 +375,11 @@
                             <div class="card-body">
                                 <p class="d-none d-sm-block">A python turtle program to draw cool diagram.</p>
                                 <br><br>
-                                <img src="https://i.pinimg.com/originals/26/a7/69/26a769c57732648b754c884253a89c01.png" alt="turtle">
+                                <img src="https://i.pinimg.com/originals/26/a7/69/26a769c57732648b754c884253a89c01.png"
+                                    alt="turtle">
                                 <br><br>
-                                <a href="https://github.com/shubham-sys/Turtle"><button type="button" class="btn btn-outline-warning">Turtle</button></a>
+                                <a href="https://github.com/shubham-sys/Turtle"><button type="button"
+                                        class="btn btn-outline-warning">Turtle</button></a>
                             </div>
                         </div>
                     </div>
@@ -219,10 +387,10 @@
 
             </div>
         </div>
-        
-        
-    </div> 
-<br><br>
+
+
+    </div>
+    <br><br>
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -230,8 +398,8 @@
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
+                        <li><a href="./index.html">About</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
                         <li><a href="./contactus.html">Contact</a></li>
                     </ul>
                 </div>
@@ -239,16 +407,16 @@
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
                         <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
-                                class="fa fa-google-plus fa-lg"></i></a>
+                                class="fa fa-google-plus"></i></a>
                         <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
-                                class="fa fa-facebook fa-lg"></i></a>
+                                class="fa fa-facebook"></i></a>
                         <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
-                                class="fa fa-linkedin fa-lg"></i></a>
+                                class="fa fa-linkedin"></i></a>
                         <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
-                                class="fa fa-twitter fa-lg"></i></a>
+                                class="fa fa-twitter"></i></a>
                         <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
-                                class="fa fa-youtube fa-lg"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                                class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
             </div>
